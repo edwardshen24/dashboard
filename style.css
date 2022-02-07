@@ -16,6 +16,7 @@ body{
     border-radius: 50%;
     margin-left: 15px;
     margin-right: 15px;
+    vertical-align: middle;
 }
 
 .header{
@@ -29,7 +30,7 @@ body{
 .top-header{
     margin-top: 5px;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: repeat(2 ,auto) ;
     justify-content: space-between;
 }
 
@@ -48,7 +49,15 @@ body{
 }
 
 .user{
-    margin-right: 100px; 
+    margin-right: 100px;
+}
+
+.userbox{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.bell,.name{
+    align-self: center;
 }
 
 .lower-header{
@@ -227,14 +236,14 @@ hr{
 .trending-user{
     display: grid;
     grid-template-columns: auto auto;
-    justify-self: center;
-    place-self: center;
+    justify-self: start;
 }
 
 .ame-trending{
     border-radius: 50%;
     height: 50px;
     width: 50px;
+    margin-right: 25px;
     justify-self: start;
 }
 
