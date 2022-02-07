@@ -20,6 +20,10 @@ body{
 
 .header{
     grid-column: 2/3;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    box-shadow: 3px 3px 3px rgb(150, 150, 150);
 }
 
 .top-header{
@@ -40,6 +44,7 @@ body{
     border: none;
     width: 600px;
     height: 20px;
+    box-shadow: 3px 3px 3px rgb(150, 150, 150);
 }
 
 .user{
@@ -87,6 +92,7 @@ body{
     border-radius: 1em;
     border:none;
     color:white;
+    box-shadow: 3px 3px 3px rgb(150, 150, 150);
 }
 
 .content-buttons button:hover{
@@ -119,6 +125,11 @@ body{
     gap: 15px;
     margin-left: 30px;
     list-style-type:none;
+    
+}
+
+.sidebar ul:not(:first-child){
+    font-size: medium;
 }
 
 .first-ul{
@@ -132,10 +143,16 @@ img{
 }
 
 .container{
-    border: 2px red solid;
     display: grid;
     grid-template-columns: 2.5fr 1fr;
     background-color: #F1F1F1 ;
+}
+.project-header{
+    font-size: large;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-left:40px;
+    margin-bottom: -15px;
 }
 
 .project-cards{
@@ -145,13 +162,79 @@ img{
 }
 
 .card{
-    height: 200px;
+    height: auto;
     border-radius: 15px;
     background-color: white;
     margin: 15px;
     padding: 20px;
+    display:grid;
+    grid-template-rows: 20px auto 0.3fr;
+    gap: 20px;
+    border-left: 5px solid #00b3ff;
+    box-shadow: 3px 3px 3px rgb(150, 150, 150);
+}
+.card-title{
+    font-size: large;
+    font-weight: 700;
+}
+
+.text{
+    color:rgb(99, 99, 99)
+}
+
+.icon-container{
+    justify-self: end;
+    margin-right: 15px;
+    margin-bottom: 10px;
 }
 
 .right-sidebar{
-    border: 2px red solid;
+    display: grid;
+    grid-template-rows: auto auto;
 }
+
+.announcements, .trending{
+    font-size: large;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-left:40px;
+    margin-bottom: 20px;
+}
+
+.news-container, .trending-container{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+    background-color: white;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px rgb(150, 150, 150);
+}
+.news-card{
+    margin-left: 20px;
+}
+
+.news-card > p{
+    margin-top: 10px;
+    color:rgb(99, 99, 99)
+}
+
+hr{
+    background-color: rgb(99, 99, 99);
+}
+
+.trending-user{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-self: center;
+    place-self: center;
+}
+
+.ame-trending{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    justify-self: start;
+}
+
