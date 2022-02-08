@@ -39,10 +39,17 @@ body{
    margin-left: 75px; 
 }
 
+.searchbox{
+    list-style-type:none;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
 .search input{
     background-color: #e2dede;
     border-radius: 5px;
     border: none;
+    margin-right: 25px;
     width: 600px;
     height: 20px;
     box-shadow: 3px 3px 3px rgb(150, 150, 150);
